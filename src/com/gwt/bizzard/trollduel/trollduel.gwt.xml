@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	When updating your version of GWT, you should also update this DTD reference,
+	so that your app can take advantage of the latest GWT module capabilities.
+-->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.6.1//EN"
+  "file:////opt/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.6.0/gwt-2.6.1/gwt-module.dtd">
+<module rename-to='troll_duel___curse_saga'>
+	<!-- Inherit the core Web Toolkit stuff.                        -->
+	<inherits name='com.google.gwt.user.User' />
+
+	<!-- Inherit the default GWT style sheet.  You can change       -->
+	<!-- the theme of your GWT application by uncommenting          -->
+	<!-- any one of the following lines.                            -->
+	<!-- <inherits name='com.google.gwt.user.theme.clean.Clean'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+	<inherits name='com.google.gwt.user.theme.dark.Dark' />
+
+	<!-- Other module inherits                                      -->
+	<inherits name="com.google.gwt.i18n.I18N" />
+
+
+	<!-- Specify the app entry point class.                         -->
+	<entry-point
+		class='com.gwt.bizzard.trollduel.client.Troll_Duel___Curse_Saga' />
+
+	<!-- Internationalization  French Spanish English(Default + Fallback)         -->
+
+	<set-property-fallback name="locale" value="en" />
+	<extend-property name="locale" values="en" />
+	<extend-property name="locale" values="fr" />
+	<extend-property name="locale" values="es" />
+
+
+	<!-- Specify the paths for translatable code                    -->
+	<source path='client' />
+	<source path='shared' />
+
+	<!-- allow Super Dev Mode -->
+	<add-linker name="xsiframe" />
+	<entry-point class="com.gwt.bizzard.trollduel.client.main"></entry-point>
+</module>
